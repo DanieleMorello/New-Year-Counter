@@ -1,0 +1,70 @@
+:root {
+  --counter-dark: #120945;
+  --ccounter-light: #ffffff;
+  --counter-bg-color: #3535ec;
+  --counter-seconds: #f2ad41;
+  --counter-title: #b02476;
+}
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--counter-bg-color);
+  font-family: "Livvic", sans-serif;
+  line-height: 1;
+}
+
+.container {
+  width: 350px;
+  margin: 32px auto 0 auto;
+}
+
+.year-stage {
+  position: relative;
+  height: 600px;
+}
+
+.panel {
+  background-color: var(--counter-dark);
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: var(--counter-title);
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-block {
+  color: var(--ccounter-light);
+  text-align: center;
+  font-weight: 600;
+}
+
+.counter-block:last-child {
+  color: var(--counter-seconds);
+}
+
+.counter-block-number {
+  font-size: 48px;
+}
+
+.counter-block-label {
+  font-size: 20px;
+}
