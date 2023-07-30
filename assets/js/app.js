@@ -45,6 +45,7 @@ function timer() {
     // Cancella l'intervallo di tempo
     clearInterval(timer);
     // Mostra un messaggio di auguri
-    panelElm.innerHTML = "<h1>Buon Anno!!! &#10084;</h1>";
+    panelElm.innerHTML =
+      '<img src="../assets/img/goodyear.gif" alt="Fuochi di artifico">';
   }
 }
